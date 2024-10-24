@@ -1,0 +1,39 @@
+name: ai_best_friend_app
+description: A new Flutter project for real-time listening and AI support.
+
+publish_to: 'none' # Prevents accidental publishing to pub.dev.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^11.3.1
+  googleapis: ^13.2.0 # Retaining this version, as it's up-to-date and used with http ^1.0.0
+  googleapis_auth: ^1.0.0
+  http: ^1.0.0 # Updating http to a compatible version with googleapis ^13.2.0
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.7.3
+  cloud_firestore: ^4.8.0
+  firebase_messaging: ^14.1.0
+  google_sign_in: ^6.1.1
+  grpc: ^3.0.0
+  protobuf: ^2.0.0
+  flutter_tts: ^4.0.2
+  audio_streamer: ^4.1.1 # Updated to a version compatible with Dart 3.5.3 and null safety
+  record: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/credentials/service_account.json
+    - assets/credentials/dialogflow_credentials.json
+    - assets/credentials/api_key.txt

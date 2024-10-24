@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "298693877607",
+    "project_id": "wingman-12196",
+    "storage_bucket": "wingman-12196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298693877607:android:bebf493cef3b4f868919c2",
+        "android_client_info": {
+          "package_name": "com.chad8.ai_best_friend_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298693877607-dlm47dfek9arefd203d8sfmkb46al87j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chad8.ai_best_friend_app",
+            "certificate_hash": "4c2ca2e4dcfe43f9e2f5d880fe750a527b23027d"
+          }
+        },
+        {
+          "client_id": "298693877607-qcuq3pm5pl3fnnpu7p5aruq0pasqgl66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwu9f20zFQkqsNDyzsuFGl_rpbEdcWGmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298693877607-qcuq3pm5pl3fnnpu7p5aruq0pasqgl66.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "298693877607-pe6iaipf1crsnhmmr4gl3l1ra6g0igds.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aiBestFriendApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services' // Using this to apply the Google Services plugin
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+}
+
+android {
+    namespace = "com.chad8.ai_best_friend_app" // Use your actual package name (consistent with Firebase registration)
+    compileSdk = 34 // Specify the actual SDK version you are using
+
+    ndkVersion = "25.1.8937393" // Specify the NDK version if applicable
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17 
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    defaultConfig {
+        // Application ID should be consistent throughout your project
+        applicationId = "com.chad8.ai_best_friend_app"
+        minSdk = 23  // Minimum supported Android version
+        targetSdk = 34 // Target the latest Android version supported
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            // Replace this with a proper signing configuration for production releases
+            minifyEnabled true   // Enables code shrinking
+            shrinkResources true // Enables resource shrinking
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Import the Firebase BoM to manage Firebase versions automatically
+    implementation platform('com.google.firebase:firebase-bom:33.5.0')
+
+    // Add Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+
+    // Other dependencies if required
+}
+
+apply plugin: 'com.google.gms.google-services'
